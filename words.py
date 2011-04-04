@@ -1,8 +1,6 @@
 #!/usr/bin/python
 # Copyright 2011 Thomas Chace
 
-import pygtk
-pygtk.require('2.0')
 import gtk
 import abiword
 
@@ -92,7 +90,7 @@ class Editor(gtk.Window):
         gtk.Window.__init__(self)
         self.abi = abiword.Canvas()
         
-        self.set_title("Write")
+        self.set_title("Words")
         self.set_default_size(800, 600)
         self.connect('delete-event', self.on_quit)
 
