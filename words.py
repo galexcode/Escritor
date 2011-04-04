@@ -13,10 +13,10 @@ class Editor(gtk.Window):
         self.abi.set_font_size("10")
         
     def on_quit(self, c, d):
-        self.abi.file_save()
+        #self.abi.file_save()
         gtk.main_quit()
         
-    def on_open(self, c):
+    def on_open(self, widget):
         self.abi.file_open()
         self.setup()
         
